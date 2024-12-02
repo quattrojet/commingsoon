@@ -54,10 +54,10 @@ $(window).load(function () {
 });
 /* END ------------------------------------------------------- */
 
-function getCountDownDate(days = 7) {
-	let date = new Date();
-	date.setDate(date.getDate() + days);
-	const dateStr = date.toString().substring(4, 15);
+function getCountDownDate() {
+	// Start date
+	const startDate = new Date(2024, 12, 10, 0, 0, 0);
+	const dateStr = startDate.toString().substring(4, 15);
 	console.log(dateStr);
 	return dateStr;
 }
